@@ -6,12 +6,14 @@ const OPTIONS = {
 };
 
 function onIntersection(entries, observer) {
-  for (const entry of entries) {
+  entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add(IN_VIEW_CLASSNAME);
-      observer.unobserve(entry.target);
+      const element = entry.target;
+      element.classList.add(IN_VIEW_CLASSNAME);
+      element.style = `--animation-order: ${index};`
+      observer.unobserve(element);
     }
-  }
+  })
 }
 
 function initializeScrollTrigger() {
@@ -28,4 +30,4 @@ function initializeScrollTrigger() {
   scrollTriggerElements.forEach((element) => observer.observe(element));
 }
 
-window.addEventListener("load", initializeScrollTrigger);
+addEventListener('DOMContentLoaded', () => initializeScrollTrigger());
