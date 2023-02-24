@@ -82,7 +82,8 @@
 }
 
 .card-information {
-  text-align: var(--text-alignment);
+  /* text-align: var(--text-alignment); */
+  text-align: right;
 }
 
 .card__media,
@@ -300,6 +301,9 @@
 .card--standard > .card__content .card__information {
   padding-left: 0;
   padding-right: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
 }
 
 .card--card.card--media .card__inner .card__information,
@@ -336,7 +340,7 @@
 }
 
 .card-information > * + * {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
 }
 
 .card-information {
@@ -361,7 +365,7 @@
 }
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating) {
-  margin-top: 0.7rem;
+  /* margin-top: 0.7rem; */
 }
 
 .card-information .caption {
