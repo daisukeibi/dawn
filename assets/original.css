@@ -1,0 +1,28 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-title {
+  font-size: 24px;
+}
+
+.page-width {
+  max-width: none;
+  margin: 0;
+  padding: 0 2vw;
+}
+
+.c-button {
+}
+
+@media screen and (max-width: 989px) {
+  .slider__slide:first-of-type {
+    padding-left: 2vw;
+  }
+}
