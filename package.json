@@ -1,0 +1,18 @@
+{
+  "name": "clayd-store",
+  "version": "1.0.0",
+  "description": "login: shopify login --store clayd-store.myshopify.com",
+  "main": "index.js",
+  "scripts": {
+    "dev":"shopify theme dev --store clayd-store.myshopify.com",
+    "watch": "tailwindcss -i ./_css/tailwind.css -o ./assets/tailwind.css -w",
+    "build": "tailwindcss -i ./_css/tailwind.css -o ./assets/tailwind.css --minify",
+    "help": "tailwindcss --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
